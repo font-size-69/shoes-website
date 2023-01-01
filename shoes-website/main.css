@@ -1,0 +1,193 @@
+body{
+    margin:0;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.6;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+
+}
+
+section {
+    padding: 7em 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+}
+
+.split {
+    display: flex;
+    gap: 2em;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+
+    flex-basis: 30%;
+    min-width: 15em;
+}
+
+.spacing> * + * {
+    margin-top: var(--spacer, 2rem)
+
+}
+
+.btn {
+    display:inline-block;
+    text-decoration: none;
+    color: var(--clr-text, #fff);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    padding: .5em 1.25em ;
+    background: var(--clr-accent, blue);
+    border-radius: .25em;
+    transition: transform 250ms ease-in-out,
+    opacity 250ms linear;
+}
+
+.btn:hover,
+.bn:focus {
+    transform: scale(1.1);
+    opacity: .9;
+
+}
+
+.primary-title {
+    font-size: 4rem;
+    font-size: clamp(3rem, calc (5vw + 1rem), 4.5rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 1;
+    font-size: clamp(2.5rem, calc (5vw + 1rem), 4rem);
+    margin-bottom: 5rem;
+
+}
+
+.hero{
+    color: white;
+    text-align: center;
+    padding: 15em 0;
+
+    background-image:
+     url(../shoes-master/img/shoe-3.png),
+     radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-attachment: fixed;   
+    background-repeat: no-repeat;
+    background-position: center center;
+
+
+    
+}
+
+.featured {
+    background: #eee;
+}
+
+.mid-shoe {
+    line-height: 1.8;
+;
+}
+
+.featured__item {
+    display: block;
+    position: relative;
+    transform: scale(.85);
+    transition: transform 250ms ease-in-out; 
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+.price {
+    display: block;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.featured__item:hover,
+.featured__item:focus {
+    transform: scale(1);
+
+}
+
+.featured__item::after{
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 75% 75% 0 0;
+    border-radius: 50%;
+    background: #2193b0;
+    z-index: -1;
+}
+
+.product {
+    background: radial-gradient(red, yellow);
+    padding: 3em;
+    border-radius: 1em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.product__image {
+    /* @media (min-width: 45em) */
+    margin: -5em 0 0 0;
+    float: right;
+    width: 50%;
+    /* shape-outside: circle(30%); */
+    shape-margin: 1em;
+    margin: 0 -4.3em 0 0;
+}
+
+.product .shoe-left .product__image {
+    float: left;
+    shape-outside: url(img/shoe-2.png);
+}
+
+.product__title {
+    font-size: 4rem;
+    line-height: 1.1;
+    color: #fff;
+    text-shadow: 0 0 .2em rgba(000, .2);
+    text-align: left;
+    shape-margin: 1em;
+}
+
+.product__description {
+
+    text-align: left;
+}
+
+
+
+.shoe-red {
+    background: 
+    radial-gradient(#faa700, #e48d00);
+}
+.shoe-white {
+    background: 
+    radial-gradient(#fce4b3, #eac886);
+    background-size: 20rem;
+}
+.shoe-blue {
+    background: 
+    radial-gradient(#6dd5ed, #2193b0);
+}
